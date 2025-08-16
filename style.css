@@ -498,7 +498,7 @@
 
     @media screen and (max-width: 52em) {
         body{
-            overflow-x: hidden !important;
+            overflow: hidden !important;
         }
         nav a {
             top: auto;
@@ -532,7 +532,7 @@
         }
 
         .bottom-bar{
-            width: 95%;
+            width: 100% !important;
             gap: 50px;
         }
 
@@ -541,6 +541,7 @@
         }
         .right-text, .left-text{
             width: 50%;
+        
             display: flex;
             justify-content: center;
         }
@@ -552,4 +553,12 @@
         .mouse-follower{
             display: none;
         }
+
+
+        body{overflow:hidden !important;}
+        .left-text,.right-text{width:50%;justify-content:center;}
+        .Copyright{display:none;}
+        .mouse-follower{display:none;}
+        .waitlist-panel { width:100%; }
+        .waitlist-toggle.collapsed { right: calc(100% - 54px); }
     }
